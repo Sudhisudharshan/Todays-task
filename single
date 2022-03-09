@@ -1,0 +1,3 @@
+Clear
+echo "$((RANDOM%10))"
+
