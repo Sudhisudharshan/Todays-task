@@ -1,7 +1,7 @@
 clear 
+inch=12
 read -p "enter the feet;" x
-y=$((x*12))
-echo "$y"
+y=`echo $x $inch | awk '{print $1*$2; print Y}'`
 read -p "enter the inches;" a
-b=$((a/12))
-echo "$b"
+b=`echo $a $inch | awk '{print $1/$2; print b}'`
+
